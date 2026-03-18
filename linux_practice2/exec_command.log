@@ -1,0 +1,221 @@
+    1  ls
+    2  ls /
+    3  ls /usr
+    4  pwd
+    5  cd root
+    6  pwd
+    7  cd /usr
+    8  pwd
+    9  cd ./
+   10  cd ..
+   11  cd root
+   12  pwd
+   13  cd usr
+   14  pwd
+   15  cd /home
+   16  mkdir test1
+   17  ls
+   18  cd ..
+   19  pwd
+   20  cd home
+   21  ls
+   22  mkdir test2/test3
+   23  mkdir -p test2/test3
+   24  ls
+   25  cd test2
+   26  ls
+   27  cd ../../
+   28  ls
+   29  cd home
+   30  touch test1/index.php
+   31  ls
+   32  cd test1
+   33  ls
+   34  ../../
+   35  cd ../../
+   36  cd /home/test1 && ls
+   37  cp index.php copy.php
+   38  ls
+   39  cd ..
+   40  cp -r test1 test4
+   41  ls
+   42  cd test
+   43  cd test4
+   44  ls
+   45  cd ../
+   46  mv test2/test3 test3
+   47  ls
+   48  pwd
+   49  mv test4 test1_copy
+   50  ls
+   51  ls test1
+   52  rm test1/copy.php
+   53  ls
+   54  ls test1
+   55  rm -r test3
+   56  ls
+   57  docker stop debian
+   58  docker start debian
+   59  docker stop debian
+   60  exit
+   61  cd /home
+   62  ls
+   63  cd test1_copy
+   64  ls
+   65  cd ..
+   66  rm test_copy/*.php
+   67  ls test1_copy
+   68  rm test1_copy/*.php
+   69  ls test1_copy/
+   70  ls
+   71  ls test1/
+   72  ls test2/
+   73  echo '#Hellow World' > README.md
+   74  cat README.md
+   75  echo '# Server Lesson' > README.md
+   76  cat README.md
+   77  echo 'Linux Practice' >> README.md
+   78  echo '-----------------' >> README.md
+   79  cat README.md
+   80  apt update -y && apt install -y vim
+   81  vi README.md
+   82  cd /root
+   83  ls
+   84  pwd
+   85  mkdir sever_lesson && cd sever_lesson
+   86  apt update -y && apt install -y git
+   87  git version
+   88  git init
+   89  touch first.txt
+   90  ls
+   91  git branch
+   92  git status
+   93  git branch
+   94  git add .
+   95  git status
+   96  git branch -m master
+   97  git status
+   98  git add .
+   99  git remote add origin https://github.com/masataro1201-hue/server_lesson.git
+  100  git push -u origin master
+  101  git commit -m "first commit"
+  102  git config --global user.name "masaya sato"
+  103  git config --global user.email "masaya.sato@giztech-pro.com"
+  104  git commit -m "first commit"
+  105  git branch -m master
+  106  git remote add origin https://github.com/masataro1201-hue/server_lesson.git
+  107  git remote -v
+  108  git push -u origin master
+  109  git status
+  110  ls
+  111  git remote -v
+  112  git branch
+  113  git log
+  114  git push origin master
+  115  git push -u origin master
+  116  ls
+  117  mkdir linux_practice1 && mkdir linux_practice1/public
+  118  ls
+  119  ls linux_practice1/
+  120  cd linux_practice1
+  121  touch index.php
+  122  ls
+  123  rm index.php
+  124  ls
+  125  cd public
+  126  touch index.php
+  127  ls
+  128  cp index.php index_bk.php
+  129  ls
+  130  cd ..
+  131  ls
+  132  cd public tmp
+  133  ls
+  134  cp public tmp
+  135  ls
+  136  cp -r public tmp
+  137  ls
+  138  ls tmp/
+  139  rm tmp/index_bk.php
+  140  ls tmp/
+  141  cd ../..
+  142  ls
+  143  cd sever_lesson
+  144  touch README.md
+  145  ls
+  146  vi README.md
+  147  vi README.md
+  148  cat README.md
+  149  ls
+  150  mkdir linux_practice2 && linux_practice2/documents
+  151  ls
+  152  cd linux_practice2
+  153  ls
+  154  mkdir documents
+  155  ls
+  156  cd documents
+  157  for i in {1..50};do touch gizumo$(printf"%02d" $i).md;done
+  158  ls
+  159  rm gizumo.md
+  160  ls
+  161  for i in {1..50};do touch gizumo$(printf "%02d" $i).md;done
+  162  ls
+  163  cd ..
+  164  mkdir trash
+  165  ls
+  166  mv linux_practice2/gizumo02.md trash
+  167  ls
+  168  ls trash/
+  169  ls documents/
+  170  cd documents
+  171  mv gizumo20.md trash
+  172  cd..
+  173  cd ..
+  174  ls trash/
+  175  cd trash
+  176  ls
+  177  cd ..
+  178  ls
+  179  cd documents
+  180  ls
+  181  cd ..
+  182  cd trash
+  183  ls
+  184  pwd
+  185  cd ..
+  186  cd documents
+  187  cd trash
+  188  ls
+  189  rm trash
+  190  ls
+  191  touch gizumo20.md
+  192  ls
+  193  cd ..
+  194  mv documents/gizumo20.md trash
+  195  ls
+  196  ls documents/
+  197  ls trash/
+  198  for i in {21..40}; do mv documents/gizumo$(printf "%2d" $i ).md trash; done
+  199  ls
+  200  ls trash/
+  201  ls documents
+  202  touch .gitignore
+  203  ls
+  204  ls
+  205  ls documents
+  206  ls -a
+  207  vi giti.gnore
+  208  ls
+  209  ls documents/
+  210  ls trash/
+  211  vi .gitignore
+  212  ls -a
+  213  vi giti.gnore
+  214  rm giti.gnore
+  215  ls
+  216  vi .gitignore
+  217  ls
+  218  ls trash/
+  219  git status
+  220  git status --ignored
+  221  history 300
