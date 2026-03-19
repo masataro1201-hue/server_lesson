@@ -1,15 +1,15 @@
-ls
-pwd
-cd
-mkdir
-touch
-&&
-cp
-mv
-rm
-* ?
-> >>
-cat
-vim
-vi
+- ls
+- pwd
+- cd
+- mkdir
+- touch
+- &&
+- cp
+- mv
+- rm
+- * ?
+- > >>
+- cat
+- vim
+- vi
 
